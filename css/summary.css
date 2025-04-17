@@ -1,0 +1,255 @@
+body{
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    background-color: #F6F7F8;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#navSummary {
+    color: #32aee3;
+}
+
+.headline-summary{
+    margin-top: 206px;
+    margin-left: 328px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.span-360{
+    font-weight: 700;
+    font-size: 61px;
+    color: #000000;
+}
+
+.vertical-line{
+    height: 59px;
+    border: 3px;
+    width: 3px;
+    background-color: #29ABE2;
+}
+
+.horizontal-line{
+    display: none;
+}
+
+.span-thin{
+    font-weight: 400;
+    font-size: 27px;
+    color: #2A3647;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.left-content{
+    margin-top: 129px;
+    margin-left: 328px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.To-do{
+    width: 264px;
+    height: 168px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    gap: 18px;
+    padding: 38px, 19px, 38px, 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0, 0, 4px, 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.circle-summary{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 8px;
+    background-color: #2A3647;
+}
+
+.To-do:hover{
+    background-color: #2A3647;
+}
+
+.To-do:hover .circle-summary {
+    background-color: white;
+}
+
+.To-do:hover .circle-summary img {
+    filter: brightness(0.2);
+}
+
+.column-summary{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center-summary{
+    display: flex;
+    align-items: center;
+}
+
+.column-summary div{
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.column-summary span{
+    font-weight: 400;
+    font-size: 20px;
+    color: #2A3647;
+}
+
+.To-do:hover .column-summary div {
+    color: white;
+}
+
+.To-do:hover .column-summary span {
+    color: white;
+}
+
+.second-line{
+    width: 560px;
+    height: 168px;
+    border-radius: 30px;
+    padding: 28px, 48px, 28px, 48px;
+    gap: 61px;
+    background-color: white;
+    box-shadow: 0,0,4px,0 rgba(0,0,0,0.1);
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.second-line:hover{
+    background-color: #2A3647;
+    cursor: pointer;
+}
+
+.second-line:hover .column-summary,
+.second-line:hover .column-summary span,
+.second-line:hover .date  {
+    color: white !important; /* Ändere die Schriftfarbe auf Weiß */
+}
+
+.urgency{
+    width: 262px;
+    height: 96px;
+    gap: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey-vertical-line{
+    height: 102.02px;
+    width: 2px;
+    background-color: #D1D1D1;
+    position: absolute;
+    left: 262px;
+}
+
+.gap-13{
+    gap: 13px;
+}
+
+.date{
+    font-weight: 700 !important;
+    font-size: 21px !important;
+    color: #2A3647 !important;
+}
+
+.deadline{
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #2A3647 !important;
+}
+
+.third-line{
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks{
+    width: 168px;
+    height: 168px;
+    border-radius: 30px;
+    padding: 25px, 0px, 25px, 0px;
+    gap: 13px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tasks:hover{
+    background-color: #2A3647;
+}
+
+.tasks:hover div,
+.tasks:hover span{
+    color: white !important;
+}
+
+.center-summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks div{
+    font-weight: 600;
+    font-size: 64px;
+    color: black;
+}
+
+.tasks span{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2A3647;
+}
+
+.right-content{
+    margin-left: 80px;
+    gap: 3px;
+    padding-top: 136px;
+}
+
+.right-content span{
+    font-weight: 500;
+    font-size: 47px;
+    color: #2A3647;
+}
+
+.greeting-name{
+    font-weight: 700;
+    font-size: 64px;
+    color: #29ABE2;
+}

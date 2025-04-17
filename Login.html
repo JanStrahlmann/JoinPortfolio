@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Log In</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="css/logIn.css">
+    <script src="js/signUp.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/logIn.js"></script>
+    <link rel="shortcut icon" href="assets/img/joinFavIcon.png" type="image/x-icon">
+</head>
+<body>
+<div class="centerAll">
+<body onload="initLogIn()">
+    <img id="meinBild" src="assets/img/Capa 2.png">
+
+    <div id="zielbereich"></div>
+
+    <div id="inhalt" class="centerAll blur">
+
+
+    <div class="displayFLex justifyContent">
+
+        <div class="notAJoinUser">
+            <div class="notAJoinUserText">Not a Join user?</div>
+            <button class="notAJoinUserButton">
+                <a href="./Signup.html" style="    
+                color: white;
+                text-decoration: none;
+                font-weight: bolder;
+                cursor: pointer;">Sign up</a></button>
+        </div>
+    </div>
+
+    <form onsubmit="logIn(); return false;" class="formLogIn">
+    <div class="LogInField">
+        <div class="displayFLex titleLogIn">
+            <img src="assets/img/LogIn.png" alt="">
+        </div>
+
+    <div class="emailPassword">
+        <div class="outer-container emailPasswordInputColumn">
+            <div class="input-container">
+                <input id="inputEmail" class="inputEmail" required type="email" placeholder="Email">
+                <img src="assets/img/mail.png" class="inputfield-icon">
+            </div>
+            <div class="input-container">
+                <input onclick="setFocus()" id="passwordInput" class="inputPassword" required type="password" placeholder="Password">
+                <img onclick="toggleShowPassword()" src="assets/img/lock.png" class="inputfield-icon lock-icon">
+                <div id="passwordError" class="error-message"></div>
+            </div>
+        </div>
+        <div class="displayFLex rememberMe">
+            <label class="custom-checkbox">
+                <input id="myCheck" type="checkbox" onclick="checkedFunction()">
+                <span class="checkmark" id="check"></span>
+              </label>
+              <p>Remember me</p>
+        </div>
+    </div>       
+        <div class="LogInBottomLogIn">
+           <button class="logInButton">Log in</button>
+           <button type="button" onclick="guestLogIn()" class="guestLogInButton">Guest Log in</button>
+        </div>
+    </div>
+</form>
+
+    <div class="privacyPolicyLegalNotice">
+        <a href="./privacyPolicyNoSidebar.html" class="PrivacyPolicy">Privacy Policy</span></a>
+        <a href="./legalNoticeNoSidebar.html" class="LegalNotice">Legal notice</span></a>
+    </div>
+</div>
+
+
+
+</body>
+</html>

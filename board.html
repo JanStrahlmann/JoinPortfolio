@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Board</title>
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./assets/templates/css/templatesStyle.css">
+    <link rel="stylesheet" href="./css/navbarSidebarMobile.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./include.js"></script>
+    <script src="./js/signUp.js"></script>
+    <script src="./js/logIn.js"></script>
+    <script src="./js/templates.js"></script>
+    <script src="./js/boardBeforeInit.js"></script>
+    <script src="./js/board.js"></script>
+    <script src="./js/boardTemplates.js"></script>
+    <script src="./js/boardVariables.js"></script>
+    <script src="./js/boardRender.js"></script>
+    <script src="./js/boardPriorities.js"></script>
+    <script src="./js/boardNewTask.js"></script>
+    <script src="./js/draganddropmobile.js"></script>
+    <link rel="shortcut icon" href="assets/img/joinFavIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/addTaskContainer.css">
+    <link rel="stylesheet" href="./css/board-showBig.css">
+    <link rel="stylesheet" href="./css/firstHalfAddTaskContainer.css">
+    <link rel="stylesheet" href="./css/secondHalfAddTaskContainer.css">
+    <link rel="stylesheet" href="./css/board-Responsive.css">
+    <link rel="stylesheet" href="./css/boardlast.css">
+    <link rel="shortcut icon" href="assets/img/joinFavIcon.png" type="image/x-icon">
+</head>
+
+
+<body id="body-board" onload="includeHTML(); initBoard(); showInitials()">
+    
+    <div w3-include-html="./assets/templates/header.html"></div>
+    <div w3-include-html="./assets/templates/side_menu.html"></div>
+
+<section class="section-board">
+
+    <div class="responsive-first-line">
+    <div class="space-between-board width-80percent">
+        <h1>Board</h1>
+        <button class="addTaskOnBoardResponsive-Button" onclick="addTaskOnBoard('To-Do')"><img src="./assets/img/addTaskBoardMobile.png"></button>
+    </div>
+            <div class="input-container-board margin-top-16">
+                <input id="search-input1" class="inputFindTask" required type="text" placeholder="Find Task" onkeyup="searchTaskResponsive()">
+                <img class="inputfield-icon-search" src="./assets/img/search-icon.png">
+                <img class="inputfield-icon-vertical-line" src="./assets/img/vertical-line-board.png">
+            </div>
+    </div>
+
+    <div class="space-between-board width-80percent">
+        <div class="just-normal-version">
+        <h1>Board</h1>
+        <div class="flex-board gap-32">
+            <div class="input-container-board">
+                <input id="search-input2" class="inputFindTask" required type="text" placeholder="Find Task" onkeyup="searchTask()">
+                <img class="inputfield-icon-search" src="./assets/img/search-icon.png">
+                <img class="inputfield-icon-vertical-line" src="./assets/img/vertical-line-board.png">
+            </div>
+            <button class="addTaskOnBoard-Button" onclick="addTaskOnBoard('To-Do')">Add Task <img src="./assets/img/button-plus-board.png"></button>
+            <button class="addTaskOnBoardResponsive-Button" onclick="addTaskOnBoard('To-Do')"><img src="./assets/img/addTaskBoardMobile.png"></button>
+        </div>
+        </div>
+    </div>
+
+<div class="board-distribution">
+    <div class="card-board">
+        <div class="space-between-board height-board card-board-title">
+            <span class="title-board">To do</span>
+            <img onclick="addTaskOnBoard('To-Do')" class="plus-border-board" src="./assets/img/plus-button-board.png">
+        </div>
+        <div id="To-Do" class="fields"  ondragleave="removeHighlight('To-Do')" ondrop="moveTo('To-Do')" ondragover="allowDrop(event); highlight('To-Do')"></div>
+    </div>
+
+    <div class="card-board">
+        <div class="space-between-board height-board card-board-title">
+            <span class="title-board">In progress</span>
+            <img onclick="addTaskOnBoard('In-Progress')" class="plus-border-board" src="./assets/img/plus-button-board.png">
+        </div>
+        <div id="In-Progress" class="fields" ondragleave="removeHighlight('In-Progress')"  ondrop="moveTo('In-Progress')" ondragover="allowDrop(event); highlight('In-Progress')">
+        </div>
+    </div>
+
+    <div class="card-board">
+        <div class="space-between-board height-board card-board-title">
+            <span class="title-board">Await feedback</span>
+            <img onclick="addTaskOnBoard('Await-Feedback')" class="plus-border-board" src="./assets/img/plus-button-board.png">
+        </div>
+        <div id="Await-Feedback" class="fields" ondragleave="removeHighlight('Await-Feedback')"  ondrop="moveTo('Await-Feedback')" ondragover="allowDrop(event); highlight('Await-Feedback')">
+        </div>
+    </div>
+
+    <div class="card-board">
+        <div class="responsive-done">
+            <span class="title-board align-center-board height-board">Done</span>
+        </div>
+        <div id="Done" class="fields" ondragleave="removeHighlight('Done')"  ondrop="moveTo('Done')" ondragover="allowDrop(event); highlight('Done')">
+        </div>
+    </div>
+</div>
+
+</section>
+
+<div id="responsive-DragAndDrop" class="responsive-DragAndDrop">
+    <div class="mini-box-To-Do">To Do</div>
+    <div class="mini-box-In-Progress">In Progress</div>
+    <div class="mini-box-Await-Feedback">Await feedback</div>
+    <div class="mini-box-Done">Done</div>
+</div>
+
+
+
+<section id="section-board-overlay" class="section-board-overlay">
+</section>
+
+<section id="overlay-add-task-board" class="overlay-add-task-board">
+</section>
+
+<div id="middle-of-the-page" class="middle-of-the-page">
+    <div id="added-to-board" class="added-to-board d-none">
+        <span>Task added to board</span>
+        <img src="./assets/img/addedToBoard.png">
+    </div>
+</div>
+    
+</body>
+</html>

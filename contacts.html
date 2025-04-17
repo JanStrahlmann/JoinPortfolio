@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Contacts</title>
+    <script src="include.js"></script>
+    <script src="js/contacts.js"></script>
+    <script src="js/editContacts.js"></script>
+    <script src="js/mobileContacts.js"></script>
+    <script src="js/addContacts.js"></script>
+    <script src="js/generateHTMLContacts.js"></script>
+    <script src="./js/templates.js"></script>
+
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="./assets/templates/css/templatesStyle.css">
+    <link rel="stylesheet" href="./assets/templates/css/templatesStyle.css">
+    <link rel="shortcut icon" href="assets/img/joinFavIcon.png" type="image/x-icon">
+</head>
+<body onload="includeHTML(); init(); showInitials()">
+
+    <div w3-include-html="./assets/templates/header.html"></div>
+    <div w3-include-html="./assets/templates/side_menu.html"></div>
+
+    <div class="main">
+        <div id="leftContainerContacts" class="leftContainer">
+            <div class="phoneListAndButton">
+                <button class="addNewContact" id="addNewContactToPhoneList">Add new contact <img class="personAdd" src="assets/img/person_add.png" alt=""></button>
+                <div class="showAllContacts">
+
+                    <div id="phonebook">
+                        
+                    </div>
+
+                    <div id="overlayOnMobileAddContacts" class="overlayAddContact"></div>
+
+                    <img onclick="showMobileAddContact()" class="addContactMobileImg" src="assets/img/addContactMobile.png">
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="rightContainerContacts" class="rightContainer">
+
+            <div id="overlayOnMobileEditContacts" class="overlayEditContact"></div>
+
+            <img class="betterWaT show" id="BetterWaTId" src="assets/img/contacts-BetterWaT.png" alt="">  
+            <img class="betterWatMobile" src="assets/img/betterWaTMobile.png">
+            <img onclick="showContactListMobile()" class="arrowLeftShowContact" src="assets/img/arrow-left-line.png">
+            <div id="contactAddedSuccesfullyId" class="contactAddedSuccesfully">
+                <img src="assets/img/addedContadctSuccesfully.png">
+            </div>
+            <div id="contactDeletedSuccesfullyId" class="contactSuccesfullyDeleted">
+                <img src="assets/img/ContactSuccesfullyDeleted.png">
+            </div>
+
+            <div onclick="closeDeleteAndEdit()" id="overlayOnMobile" class="overlay"></div>
+            
+            <div id="targetArea"></div>
+            <img onclick="showEditDeleteMobileOnSlide()" id="menuOptionsContactMobile" class="menuOptionsContact" src="assets/img/MenuContactOptions.png">
+        </div>
+
+
+        <div id="showContactDetailsOnSlide">
+            <div id="showInnerHTML"></div>
+        </div>   
+        </div>  
+
+
+                <div id="letAddContactSlideIn" class="centerAll displayNone">
+                    <div class="leftrightContainer">
+                        <img class="exitAddContactMobile" onclick="closeAddContactMobile()" src="assets/img/CloseWhite.png">
+                        <div class="addContactImg">
+                            <img id="addContactImgChange" src="assets/img/Frame 194.png">
+                        </div>
+                        <div class="addContactInputFields">
+                            <div class="imgAndInputfields">
+                                <img class="profilepictureSize" src="assets/img/Frame 79 (1).png">
+                                <div class="right-Container">
+                                    <div class="inPutfields">
+                                        <div class="closeButton">
+                                            <img id="closeButton" class="closeImgAdd" src="assets/img/close.png">
+                                        </div>
+                                        <div class="mobileAdjustments">
+                                        <div class="inputs">
+                                            <form id="contactForm">
+                                            <div class="Name">
+                                                <input required class="inputfieldAddContact" id="newContactName" type="text" placeholder="Name">
+                                                <img src="assets/img/person.png" class="inputfield-icon width22">
+                                            </div>
+                                            <div class="Name">
+                                                <input required class="inputfieldAddContact" id="newContactEmail" type="email" placeholder="Email">
+                                                <img src="assets/img/mail.png" class="inputfield-icon width22">
+                                            </div>
+                                            <div class="Name">
+                                                <input required class="inputfieldAddContact" id="newContactNumber" type="number" placeholder="Phone">
+                                                <img src="assets/img/call.png" class="inputfield-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <div class="cancelOrCreateContact">
+                                            <button type="button" id="cancelAccountSubmit" class="cancelButton">Cancel <img class="vectorCancelButton" src="assets/img/Vector.png"></button>
+                                            <button type="submit" id="createAccountSubmit" class="createAccountButton">Create Account <img class="checkCreateAccountButton" src="assets/img/check.png" alt=""></button>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+          <div id="editContactsOnclick"> 
+
+          </div>
+
+
+    </div>
+    
+</body>
+</html>

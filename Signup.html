@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Sign Up</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <script src="js/signUp.js"></script>
+    <script src="js/register.js"></script>
+    <link rel="shortcut icon" href="assets/img/joinFavIcon.png" type="image/x-icon">
+</head>
+<body onload="init()">
+<div class="centerAll">
+<body>
+
+
+    <div id="zielbereich">
+        <img class="joinLogoSignUp" src="assets/img/Capa 2.png">
+    </div>
+
+<div id="inhalt" class="centerAll">
+
+
+    <div id="signUP-Div" class="displayFLex justifyContent overlay-signUp">
+
+        <div class="signedUpSuccessfullyDiv">
+            <img id="signedUp" class="signedUpSuccessfullyimg" src="assets/img/signedUpSuccessfully.png" alt="">
+        </div>
+    </div>
+
+
+    <form onsubmit="register(); return false;" class="formSignUp">
+    <div class="LogInField">
+        <div class="displayFLex titleLogIn">
+            <img class="signUpLogo" src="assets/img/Signup.png" alt="">
+            <a href="Login.html" class="arrow-left">
+                <img src="assets/img/arrow-left-line.png" alt="">
+            </a>
+        </div>
+    <div class="emailPassword">
+        <div class="outer-container emailPasswordInputColumn">
+            <div class="input-container">
+                <input class="inputEmail" required type="text" placeholder="Name" id="name1">
+                <img src="assets/img/person.png" class="inputfield-icon">
+            </div>
+            <div class="input-container">
+                <input class="inputPassword inputColor" required type="email" placeholder="Email" id="email">
+                <img src="assets/img/mail.png" class="inputfield-icon">
+            </div>
+            <div class="input-container">
+                <input id="passwordInput" class="inputPassword" required type="password" placeholder="Password">
+                <img onclick="toggleShowPassword()" src="assets/img/lock.png" class="inputfield-icon lock-icon">
+            </div>
+            <div class="input-container">
+                <input onclick="setFocus()" id="confirmPasswordInput" class="inputPasswordConfirm" required type="password" placeholder="Confirm Password">
+                <img onclick="toggleShowConfirmPassword()" src="assets/img/lock.png" class="inputfield-icon lock-icon">
+                <div id="passwordErrorSignUp" class="error-message"></div>
+            </div>
+        </div>
+        <div class="displayFLex rememberMe">
+            <label class="custom-checkbox">
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+              </label>
+              <p class="greytext">I accept the <a href="./privacyPolicyNoSidebar.html" class="highlight">Privacy Policy</span></a></p>
+        </div>
+    </div>       
+        <div class="LogInBottomLogIn">
+           <button class="logInButton" id="registerBTN">Sign up</button>
+        </div>
+    </div>
+    </form>
+
+    <div class="privacyPolicyLegalNotice">
+        <a href="./privacyPolicyNoSidebar.html" class="PrivacyPolicy">Privacy Policy</span></a>
+        <a href="./legalNoticeNoSidebar.html" class="LegalNotice">Legal notice</span></a>
+    </div>
+</div>
+
+
+
+</body>
+</html>

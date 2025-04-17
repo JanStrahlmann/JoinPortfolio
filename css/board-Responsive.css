@@ -1,0 +1,401 @@
+@media(max-width: 1320px){
+    .body-board{
+        overflow-x: hidden;
+    }
+
+    .section-board{
+        margin-left: 245px;
+       width: 700px;
+    }
+
+    .card-board{
+        width: 150px;
+    }
+
+    .card-board-title{
+        width: 125%;
+    }
+
+    .no-tasks-board{
+        width: 183px;
+        }
+        
+        .tasks-board{
+        width: 150px;
+        }
+
+    .technical-task-board{
+        width: 65px;
+    }
+
+    .user-story-board{
+        width: 65px;
+    }
+
+    .subtask-input-newTask{
+        width: 300px;
+    }
+
+    .titleInputAddTask{
+        width: 300px;
+    }
+
+    .descriptionTextArea{
+        width: 300px;
+    }
+
+    .contactsInputField{
+        width: 300px;
+    }
+
+    .dateInput{
+        width: 300px;
+    }
+
+    .prioPickerButtonsContainer{
+        width: 300px;
+    }
+
+    .urgentButton{
+        width: 30%;
+    }
+
+    .mediumButton{
+        width: 30%;
+    }
+
+    .lowButton{
+        width: 30%;
+    }
+
+    .categoryPicker{
+        width: 300px;
+    }
+
+    .input-container{
+        width: 300px;
+    }
+
+    .subtask-input{
+        width: 300px;
+    }
+}
+
+@media(max-width: 1079px){
+    .body-board{
+        overflow-x: hidden;
+    }
+
+    .section-board{
+        margin-left: 20px;
+       padding: 10px;
+       width: 90vw;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .tasks-board-big {
+        overflow-y: auto;
+        height: 500px;
+    }
+
+    .technical-task-board{
+        width: 65px;
+    }
+
+    .user-story-board{
+        width: 65px;
+    }
+
+    .addTaskContentContainerBoard {
+        padding: 16px;
+        height: 75%;
+        width: 80%;
+        background: #F6F7F8;
+        z-index: 99;
+        position: relative;
+        border-radius: 20px;
+        transition: all ease-in-out 800ms;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .headlineAddTaskContainerBoard {
+        position: static;
+    }
+
+    .leftAddTaskContainer {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .descriptionContainer {
+        position: static;
+        margin-top: 16px;
+    }
+
+    .assignContactsContainer {
+        position: static;
+        margin-top: 16px;
+    }
+
+    .rightAddTaskContainer {
+        position: static;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: auto;
+    }
+
+    .taskDateContainer {
+        position: static;
+        margin-top: 32px;
+    }
+
+    .prioPickerContainer {
+        position: static;
+        margin-top: 16px;
+    }
+
+    .categoryContainer{
+        position: static;
+        margin-top: 16px;
+    }
+
+    .input-container{
+        position: relative;
+       left: 0;
+       top: 0;
+       margin-top: 16px;
+    }
+
+    .fieldRequiredText{
+        display: none;
+    }
+
+    .clearCreateButtonsContainer {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .clearButton {
+       display: none;
+    }
+
+    .fieldRequiredText2{
+        display: block;
+    }
+
+}
+
+@media(max-width: 836px){
+    .body-board{
+        overflow-x: hidden;
+    }
+
+    .addTaskContentContainerBoard{
+        display: none;
+    }
+
+    .section-board{
+        padding: 16px;
+        margin-top: 80px;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-board-title{
+        width: 100%;
+    }
+
+    .responsive-done{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .just-normal-version{
+        display: none;
+    }
+
+    .responsive-first-line{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .width-80percent{
+        width: 100%;
+    }
+
+    .addTaskOnBoardResponsive-Button{
+        display: block;
+    }
+
+    .input-container-board{
+        width: 100%;
+    }
+
+    .inputfield-icon-search {
+        position: absolute;
+        right: 20px;
+        width: 25px;
+    }
+
+    .board-distribution {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    .card-board{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .title-board{
+        font-size: 27px;
+        font-weight: 700;
+        color: #2A3647;
+    }
+          
+    .plus-border-board{
+        width: 30px;
+        height: 30px;
+    }
+
+    .fields{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 53px;
+    }
+
+    .no-tasks-board {
+        width: 100%;
+        height: 48px;
+    }
+
+    .tasks-board {
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+        width: 40%;
+        height: auto;
+    }
+
+    .title-board{
+        font-weight: 700;
+        font-size: 27px;
+    }
+
+    .technical-task-board{
+        width: 100px;
+    }
+
+    .user-story-board{
+        width: 100px;
+    }
+
+    .name-of-task-board span{
+        font-weight: 700;
+        font-size: 16px;
+    } 
+
+    .name-of-task-board p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .progressbar-background{
+        border-radius: 8px;
+    }
+
+    .progressbar-board{
+        border-radius: 16px;
+    }
+
+    .tasks-board-big {
+        width: 50%;
+    }
+}
+
+@media(max-width: 664px){
+    .body-board{
+        overflow-x: hidden;
+    }
+
+    .tasks-board {
+        width: 50%;
+    }
+}
+
+@media(max-width: 448px){
+    .body-board{
+        overflow-x: hidden;
+    }
+    
+    .tasks-board {
+        width: 85%;
+    }
+
+    .input-container-board{
+        margin-right: 20px;
+    }
+
+    .edit-input {
+        width: 250px;
+        height: 48px;
+    }
+
+    .contactsInputFieldLittle {
+        width: 250px;
+        height: 48px;
+    }
+
+    .subtask-input-newTask{
+        width: 250px;
+    }
+
+    .subtask-input {
+        width: 250px;
+    }
+
+    .subtask-div{
+        width: 250px;
+    }
+
+    .relative{
+        width: 250px;
+    }
+
+    .flex-board-edit {
+        width: 250px;
+    }
+
+    .fields{
+        width: 90%;
+    }
+}
+

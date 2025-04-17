@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+    background-color: #f6f7f8;
+}
+
+.addTaskContentContainer {
+    position: absolute;
+    top: 96px;
+    bottom: 0;
+    right: 0;
+    left: 232px;
+    margin: 110px 0 0 96px;
+    max-width: 978px;
+}
+
+.headlineAddTaskContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 1px;
+    width: 278px;
+    height: 73px;
+}
+
+.addTaskFormContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-top: 32px;
+}
+
+.leftAddTaskContainer {
+    width: 440px;
+    height: 376px;
+    font-size: 20px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 96px;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 168px;
+}
+
+.assignContactsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 96px;
+}
+
+.rightAddTaskContainer {
+    width: 440px;
+    height: 416px;
+}
+
+.taskDateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 96px;
+}
+
+.prioPickerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 96px;
+}
+
+.prioPickerButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 440px;
+    height: 56px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 96px;
+}
+
+.subtaskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 96px;
+}
+
+.clearCreateButtonsContainer {
+    display: flex;
+    position: absolute;
+    padding: 0px;
+    gap: 16px;
+    width: 309px;
+    height: 56px;
+    right: 0;
+    margin-bottom: 32px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 440px;
+    height: 80px;
+}
+
+.todo-subtask-container {
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#subtask-container {
+    padding-inline-start: 0px;
+    min-height: 135px;
+    overflow: auto;
+}
+
+.taskAddedMessageContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    height: 40%;
+}
+
+.z-index {
+    z-index: -1;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | Summary</title>
+    <script src="./include.js"></script>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./assets/templates/css/templatesStyle.css">
+    <link rel="stylesheet" href="./css/navbarSidebarMobile.css">
+    <link rel="stylesheet" href="./css/summary.css">
+    <link rel="stylesheet" href="./css/summaryResponsive.css">
+    <link rel="shortcut icon" href="assets/img/joinFavIcon.png" type="image/x-icon">
+    <script src="./js/signUp.js"></script>
+    <script src="./js/logIn.js"></script>
+    <script src="./js/templates.js"></script>
+    <script src="./js/summary.js"></script>
+  </head>
+  <body onload="includeHTML(); initSummary(); showInitials(); greetingUser()">
+
+    <div w3-include-html="./assets/templates/header.html"></div>
+    <div w3-include-html="./assets/templates/side_menu.html"></div>
+
+
+
+<div class="flex-start-respo">
+    <div class="headline-summary">
+      <span class="span-360">JOIN 360</span>
+      <div class="vertical-line"></div>
+      <span class="span-thin">Key Metrics at a Glance</span>
+      <img class="horizontal-line" src="./assets/img/horizontal-line.png">
+    </div>
+</div>
+
+    <div class="main-container">
+      <div class="left-content">
+        <div class="first-line">
+          <div onclick="openBoard()" id="summary-to-do" class="To-do">
+            <div class="circle-summary">
+              <img src="./assets/img/pencil.png">
+            </div>
+            <div class="column-summary align-items-center-summary">
+              <div id="to-do-content"></div>
+              <span>To-do</span>
+            </div>
+          </div>
+          <div class="To-do" onclick="openBoard()">
+            <div class="circle-summary">
+              <img src="./assets/img/checksumm.png">
+            </div>
+            <div class="column-summary align-items-center-summary">
+              <div id="done-content"></div>
+              <span>Done</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-line" onclick="openBoard()">
+            <div class="urgency">
+                <img src="./assets/img/arrowUp-icon.png">
+                <div class="column-summary align-items-center-summary">
+                    <div id="urgent-tasks-content"></div>
+                    <span>Urgent</span>
+                </div>
+            </div>
+            <div class="grey-vertical-line"></div>
+            <div class="column-summary gap-13">
+                <span class="date" id="earliest-date-content"></span>
+                <span class="deadline">Upcoming Deadline</span>
+            </div>
+        </div>
+        <div class="third-line">
+            <div class="tasks column-summary center-summary" onclick="openBoard()">
+                <div id="tasks-in-board-content"></div>
+                <span>Tasks in<br> Board</span>
+            </div>
+            <div class="tasks column-summary center-summary" onclick="openBoard()">
+                <div id="tasks-in-progress-content"></div>
+                <span>Tasks in<br> Progress</span>
+            </div>
+            <div class="tasks column-summary center-summary" onclick="openBoard()">
+                <div id="awaiting-feedback-content"></div>
+                <span>Awaiting<br> Feedback</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <span><b id="greeting"></b><br> <b id="greeting-name" class="greeting-name"></b></span>
+      </div>
+    </div>
+  </body>
+</html>
